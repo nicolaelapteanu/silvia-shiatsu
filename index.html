@@ -3,528 +3,1527 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Silvia Shiatsu - Terapie Shiatsu profesională în Republica Moldova. Masaj terapeutic japonez pentru relaxare și echilibru energetic.">
-    <meta name="keywords" content="shiatsu, masaj, terapie, relaxare, Moldova, România, wellness, sănătate">
-    <meta property="og:title" content="Silvia Shiatsu - Terapie Shiatsu Profesională">
-    <meta property="og:description" content="Masaj terapeutic japonez pentru sănătate, relaxare și bunăstare">
+    <meta name="description" content="Terapie Shiatsu profesională în Chișinău. Sesiuni individuale pentru dureri de spate, stres cronic și somn prost. Rămâi îmbrăcat(ă), fără uleiuri. Programare rapidă pe WhatsApp.">
+    <meta name="keywords" content="masaj shiatsu Chișinău, terapie shiatsu Moldova, masaj terapeutic Chișinău, dureri de spate, stres cronic, somn prost">
+    <meta property="og:title" content="Silvia Shiatsu - Terapie pentru durere, stres și somn prost">
+    <meta property="og:description" content="Shiatsu profesional în Chișinău. Rămâi îmbrăcat, fără uleiuri. Programare în 2 ore.">
     <meta property="og:type" content="website">
-    <title>Silvia Shiatsu - Terapie Shiatsu Profesională</title>
+    <title>Silvia Shiatsu - Scapă de durere, tensiune și stres</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --primary-color: #1b3a20;
-            --secondary-color: #c5a059;
-            --accent-color: #c5a059;
-            --text-dark: #333;
-            --text-light: #666;
-            --bg-light: #f9f7f2;
-            --white: #ffffff;
+            --green:       #1a3520;
+            --green-mid:   #274d2e;
+            --green-light: #3a6b43;
+            --gold:        #c8a96e;
+            --gold-light:  #e2c99a;
+            --cream:       #f8f4ed;
+            --cream-dark:  #f0ead9;
+            --text:        #2a2a2a;
+            --text-mid:    #555;
+            --text-light:  #888;
+            --white:       #ffffff;
+            --shadow-sm:   0 2px 12px rgba(0,0,0,0.06);
+            --shadow-md:   0 8px 32px rgba(0,0,0,0.10);
+            --shadow-lg:   0 20px 60px rgba(0,0,0,0.14);
+            --radius:      4px;
+            --radius-lg:   12px;
         }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
 
         body {
-            font-family: 'Lato', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.8;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.7;
             overflow-x: hidden;
-            background-color: var(--white);
-            /* Subtle Seigaiha pattern */
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 40c4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10H0zm0-20c4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10 4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10 4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10H0zm0-20C4.5 15 9.2 10 14.6 10c5.4 0 10 5 14.6 10 4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10 4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10 4.5-5 9.2-10 14.6-10 5.4 0 10 5 14.6 10H0z' fill='%23c5a059' fill-opacity='0.03'/%3E%3C/svg%3E");
         }
 
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
+        /* ─── TYPOGRAPHY ─────────────────────────────── */
+        h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; line-height: 1.15; }
+        h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); font-weight: 300; }
+        h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; }
+        h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 400; }
+        p  { font-weight: 300; }
+
+        .section-label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 1rem;
         }
 
-        /* Header */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(27, 58, 32, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            color: var(--white);
-            padding: 1rem 0;
-            text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+        /* ─── LAYOUT ─────────────────────────────────── */
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 2rem; }
+        .container--narrow { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 7rem 0; }
+
+        /* ─── NAV ─────────────────────────────────────── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 999;
+            padding: 1.2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(26, 53, 32, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(200,169,110,0.15);
+            transition: padding 0.3s ease;
         }
 
-        header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0;
-            font-weight: 700;
-            letter-spacing: 2px;
+        nav.scrolled { padding: 0.8rem 2rem; }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--cream);
+            letter-spacing: 0.05em;
+            text-decoration: none;
         }
 
-        header p {
-            font-size: 0.9rem;
-            font-weight: 300;
-            opacity: 0.95;
-            letter-spacing: 1px;
+        .nav-logo span { color: var(--gold); }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
         }
 
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+        .nav-links a {
+            color: rgba(248,244,237,0.8);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
         }
 
-        /* Hero Section */
+        .nav-links a:hover { color: var(--gold); }
+
+        .btn-nav {
+            background: var(--gold);
+            color: var(--green) !important;
+            padding: 0.5rem 1.3rem;
+            border-radius: 2px;
+            font-weight: 500 !important;
+            transition: background 0.2s, transform 0.2s !important;
+        }
+
+        .btn-nav:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .hamburger span { display: block; width: 24px; height: 1.5px; background: var(--cream); transition: all 0.3s; }
+
+        /* ─── HERO ────────────────────────────────────── */
         .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            background: var(--green);
             position: relative;
-            background: linear-gradient(rgba(27, 58, 32, 0.75), rgba(27, 58, 32, 0.75)), 
-                        url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: var(--white);
-            padding: 12rem 0;
-            text-align: center;
+            overflow: hidden;
+            padding-top: 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 80% at 70% 50%, rgba(58,107,67,0.35) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 60% at 20% 80%, rgba(200,169,110,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Seigaiha (wave scale) pattern overlay */
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30'%3E%3Cellipse cx='30' cy='30' rx='28' ry='18' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3Cellipse cx='0' cy='30' rx='28' ry='18' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3Cellipse cx='60' cy='30' rx='28' ry='18' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3Cellipse cx='15' cy='15' rx='28' ry='18' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3Cellipse cx='45' cy='15' rx='28' ry='18' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 8rem 4rem 6rem 2rem;
+            max-width: 620px;
+            margin-left: auto;
+        }
+
+        .hero-trust-bar {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-pill {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            letter-spacing: 0.05em;
+        }
+
+        .trust-pill::before {
+            content: '✓';
+            font-size: 0.7rem;
+            color: var(--gold);
+        }
+
+        .hero h1 {
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--gold);
+        }
+
+        .hero-sub {
+            color: rgba(248,244,237,0.75);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            max-width: 480px;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--gold);
+            color: var(--green);
+            padding: 1rem 2rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(200,169,110,0.35);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--cream);
+            font-size: 0.85rem;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+            border-bottom: 1px solid rgba(248,244,237,0.3);
+            padding-bottom: 2px;
+        }
+
+        .btn-ghost:hover { opacity: 1; }
+
+        .hero-response { 
+            margin-top: 1.2rem; 
+            font-size: 0.78rem; 
+            color: rgba(248,244,237,0.45); 
+            letter-spacing: 0.04em;
+        }
+
+        /* Hero Image Panel */
+        .hero-image {
+            position: relative;
+            height: 100vh;
             overflow: hidden;
         }
 
-        /* Decorative Enso Circle */
-        .enso-overlay {
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 30% center;
+            filter: brightness(0.6) saturate(0.8);
+        }
+
+        .hero-image-overlay {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 500px;
-            height: 500px;
-            opacity: 0.15;
-            pointer-events: none;
-            filter: invert(1);
+            inset: 0;
+            background: linear-gradient(to right, var(--green) 0%, transparent 30%);
         }
 
-        .hero .container {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h2 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-        }
-
-        /* Kanji Watermarks */
-        .kanji-deco {
+        /* Floating kanji */
+        .kanji-float {
             position: absolute;
-            writing-mode: vertical-rl;
-            font-size: 6rem;
-            opacity: 0.04;
-            color: var(--primary-color);
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--gold);
+            opacity: 0.12;
             user-select: none;
-            font-family: serif;
-            z-index: -1;
+            pointer-events: none;
+            writing-mode: vertical-rl;
         }
 
-        /* Section */
-        section {
-            padding: 6rem 0;
+        /* ─── PROBLEM BAND ────────────────────────────── */
+        .problem-band {
+            background: var(--cream-dark);
+            padding: 5rem 0;
+            border-top: 1px solid rgba(200,169,110,0.15);
+            border-bottom: 1px solid rgba(200,169,110,0.15);
         }
 
-        section:nth-child(even) {
-            background-color: var(--bg-light);
-            border-top: 1px solid rgba(197, 160, 89, 0.1);
-            border-bottom: 1px solid rgba(197, 160, 89, 0.1);
-        }
-
-        section h2 {
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
+        .problem-band h2 {
+            color: var(--green);
+            margin-bottom: 1rem;
             text-align: center;
-            color: var(--primary-color);
+        }
+
+        .problem-band .lead {
+            text-align: center;
+            color: var(--text-mid);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-size: 1.05rem;
+        }
+
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .symptom-tag {
+            background: var(--white);
+            border: 1px solid rgba(200,169,110,0.25);
+            border-left: 3px solid var(--gold);
+            padding: 1rem 1.3rem;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.92rem;
+            color: var(--text-mid);
+            transition: box-shadow 0.2s;
+        }
+
+        .symptom-tag:hover { box-shadow: var(--shadow-sm); }
+
+        .symptom-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: var(--gold);
+        }
+
+        .solution-bridge {
+            background: var(--green);
+            color: var(--cream);
+            padding: 2.5rem 3rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-bridge::before {
+            content: '気';
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: serif;
+            font-size: 6rem;
+            opacity: 0.06;
+            color: var(--gold);
+        }
+
+        .solution-bridge h3 { color: var(--gold-light); margin-bottom: 0.8rem; }
+        .solution-bridge p { color: rgba(248,244,237,0.8); font-size: 1rem; }
+
+        /* ─── HOW IT WORKS ────────────────────────────── */
+        .how-section { background: var(--white); }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            margin-top: 4rem;
+            background: rgba(200,169,110,0.15);
+        }
+
+        .step {
+            background: var(--white);
+            padding: 3rem 2.5rem;
             position: relative;
         }
 
-        section h2::after {
-            content: '';
-            display: block;
-            width: 40px;
-            height: 2px;
-            background: var(--secondary-color);
-            margin: 1rem auto 0;
-            border-radius: 2px;
-            opacity: 0.6;
-        }
-
-        /* About Section */
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 2;
-            color: var(--text-light);
-        }
-
-        .about-content p {
+        .step-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-weight: 300;
+            color: rgba(200,169,110,0.2);
+            line-height: 1;
             margin-bottom: 1.5rem;
         }
 
-        .highlight {
-            background-color: var(--white);
-            padding: 3rem;
-            border: 1px solid rgba(197, 160, 89, 0.2);
-            margin: 2rem 0;
-            border-radius: 2px;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        .step h3 { color: var(--green); margin-bottom: 0.8rem; }
+        .step p { color: var(--text-mid); font-size: 0.95rem; }
+
+        .step-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.2rem;
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-weight: 500;
+            letter-spacing: 0.03em;
         }
 
-        /* Benefits Grid */
+        /* ─── BENEFITS ────────────────────────────────── */
+        .benefits-section { background: var(--cream); }
+
+        .benefits-intro {
+            max-width: 600px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .benefits-intro h2 { color: var(--green); margin-bottom: 1rem; }
+        .benefits-intro p { color: var(--text-mid); }
+
         .benefits-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
         }
 
         .benefit-card {
             background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid rgba(200,169,110,0.15);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
             transition: all 0.3s ease;
-            border-top: 4px solid var(--secondary-color);
+            position: relative;
+            overflow: hidden;
         }
 
-        .benefit-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(27, 58, 32, 0.1);
-            border-top-color: var(--primary-color);
+        .benefit-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--gold), transparent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
         }
 
-        .benefit-card h3 {
-            color: var(--primary-color);
-            margin: 1rem 0;
-            font-size: 1.8rem;
-        }
-
-        .benefit-card p {
-            color: var(--text-light);
-            line-height: 1.7;
-        }
+        .benefit-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .benefit-card:hover::after { transform: scaleX(1); }
 
         .benefit-icon {
-            width: 50px;
-            height: 50px;
+            width: 44px; height: 44px;
+            color: var(--gold);
             margin-bottom: 1.5rem;
-            color: var(--secondary-color);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s;
         }
 
-        .benefit-card:hover .benefit-icon {
-            transform: scale(1.1);
+        .benefit-card:hover .benefit-icon { transform: scale(1.1); }
+
+        .benefit-card h3 { color: var(--green); margin-bottom: 0.8rem; font-size: 1.3rem; }
+        .benefit-card p { color: var(--text-mid); font-size: 0.92rem; line-height: 1.75; }
+
+        /* ─── TESTIMONIALS ────────────────────────────── */
+        .testimonials-section { background: var(--green); }
+
+        .testimonials-section h2 { color: var(--cream); text-align: center; margin-bottom: 1rem; }
+        .testimonials-section .section-label { text-align: center; }
+
+        .testimonials-lead {
+            color: rgba(248,244,237,0.6);
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto 4rem;
+            font-size: 0.95rem;
         }
 
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1a3a1b 100%);
-            color: var(--white);
-            padding: 5rem 0;
-        }
-
-        .contact h2 {
-            color: var(--white);
-            margin-bottom: 3rem;
-        }
-
-        .contact-grid {
+        .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(200,169,110,0.2);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .testimonial-card:hover { background: rgba(255,255,255,0.09); }
+
+        .stars {
+            display: flex; gap: 3px;
+            margin-bottom: 1.2rem;
+        }
+
+        .star { color: var(--gold); font-size: 1rem; }
+
+        .testimonial-problem {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: rgba(248,244,237,0.85);
+            font-size: 1rem;
+            line-height: 1.75;
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .author-avatar {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: rgba(200,169,110,0.2);
+            border: 1px solid rgba(200,169,110,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--gold);
+        }
+
+        .author-info { display: flex; flex-direction: column; }
+        .author-name { color: var(--cream); font-size: 0.88rem; font-weight: 500; }
+        .author-detail { color: rgba(248,244,237,0.4); font-size: 0.75rem; }
+
+        .testimonials-cta { text-align: center; margin-top: 4rem; }
+
+        /* ─── ABOUT ───────────────────────────────────── */
+        .about-section { background: var(--cream-dark); }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-image-wrap {
+            position: relative;
+        }
+
+        .about-image-frame {
+            aspect-ratio: 3/4;
+            background: var(--green-mid);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .about-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: saturate(0.85);
+        }
+
+        /* Placeholder when no photo */
+        .about-photo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: rgba(200,169,110,0.4);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .about-photo-placeholder svg { width: 60px; height: 60px; opacity: 0.4; }
+
+        .about-deco {
+            position: absolute;
+            bottom: -1.5rem;
+            right: -1.5rem;
+            width: 120px;
+            height: 120px;
+            border: 1px solid rgba(200,169,110,0.3);
+            border-radius: var(--radius-lg);
+            z-index: -1;
+        }
+
+        .cred-badge {
+            position: absolute;
+            top: 1.5rem;
+            left: -1.5rem;
+            background: var(--white);
+            border: 1px solid rgba(200,169,110,0.25);
+            border-radius: var(--radius-lg);
+            padding: 1rem 1.5rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .cred-badge .cred-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--green);
+            line-height: 1;
+        }
+
+        .cred-badge .cred-label {
+            font-size: 0.72rem;
+            color: var(--text-light);
+            letter-spacing: 0.05em;
+        }
+
+        .about-content h2 { color: var(--green); margin-bottom: 0.5rem; }
+
+        .about-name-sub {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-content p {
+            color: var(--text-mid);
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.85;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 2rem;
+        }
+
+        .credential {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--white);
+            border: 1px solid rgba(200,169,110,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            color: var(--text-mid);
+        }
+
+        .credential svg { color: var(--gold); width: 14px; height: 14px; }
+
+        /* ─── PRICING ─────────────────────────────────── */
+        .pricing-section { background: var(--white); }
+
+        .pricing-header { text-align: center; margin-bottom: 4rem; }
+        .pricing-header h2 { color: var(--green); margin-bottom: 1rem; }
+        .pricing-header p { color: var(--text-mid); max-width: 520px; margin: 0 auto; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+
+        .price-card {
+            border: 1px solid rgba(200,169,110,0.2);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            background: var(--cream);
+        }
+
+        .price-card.featured {
+            background: var(--green);
+            border-color: var(--gold);
+            transform: scale(1.03);
+        }
+
+        .price-card:hover:not(.featured) {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .price-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: var(--green);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 100px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .price-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .price-card.featured h3 { color: var(--gold-light); }
+        .price-card:not(.featured) h3 { color: var(--green); }
+
+        .price-duration {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            letter-spacing: 0.08em;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-card.featured .price-duration { color: rgba(248,244,237,0.5); }
+
+        .price-amount {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1;
+            color: var(--green);
+            margin-bottom: 0.3rem;
+        }
+
+        .price-card.featured .price-amount { color: var(--cream); }
+
+        .price-currency {
+            font-size: 1.2rem;
+            vertical-align: super;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+        }
+
+        .price-unit {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .price-card.featured .price-unit { color: rgba(248,244,237,0.5); }
+
+        .price-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            color: var(--text-mid);
+            margin-bottom: 0.6rem;
+        }
+
+        .price-card.featured .price-features li { color: rgba(248,244,237,0.75); }
+
+        .price-features li::before {
+            content: '✓';
+            color: var(--gold);
+            flex-shrink: 0;
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+
+        .price-note {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            max-width: 500px;
             margin: 0 auto;
         }
 
-        .contact-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
+        /* ─── FAQ ─────────────────────────────────────── */
+        .faq-section { background: var(--cream); }
+
+        .faq-header { text-align: center; margin-bottom: 4rem; }
+        .faq-header h2 { color: var(--green); margin-bottom: 1rem; }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        .faq-item {
+            background: var(--white);
+            border: 1px solid rgba(200,169,110,0.15);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
         }
 
-        .contact-item h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            color: var(--accent-color);
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.4rem 1.8rem;
+            cursor: pointer;
+            gap: 1rem;
+            transition: background 0.2s;
+            user-select: none;
         }
 
-        .contact-item a {
-            color: var(--white);
-            text-decoration: none;
+        .faq-question:hover { background: var(--cream); }
+
+        .faq-q-text {
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.1rem;
-            display: inline-block;
-            transition: color 0.3s ease;
+            color: var(--green);
+            font-weight: 400;
         }
 
-        .contact-item a:hover {
-            color: var(--accent-color);
-        }
-
-        .contact-icon {
-            width: 45px;
-            height: 45px;
-            margin: 0 auto 1.5rem;
-            display: block;
-            color: var(--accent-color);
+        .faq-chevron {
+            width: 18px; height: 18px;
+            color: var(--gold);
+            flex-shrink: 0;
             transition: transform 0.3s ease;
         }
 
-        .contact-item:hover .contact-icon {
-            transform: scale(1.1);
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.2s;
         }
 
-        /* Global Links */
-        a {
-            transition: all 0.3s ease;
+        .faq-item.open .faq-answer { max-height: 400px; }
+
+        .faq-answer-inner {
+            padding: 0 1.8rem 1.5rem;
+            color: var(--text-mid);
+            font-size: 0.92rem;
+            line-height: 1.8;
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: var(--white);
+        /* ─── FINAL CTA ───────────────────────────────── */
+        .final-cta {
+            background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 60%, #1f3d25 100%);
+            padding: 8rem 0;
             text-align: center;
-            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
         }
 
-        footer p {
-            opacity: 0.8;
+        .final-cta::before {
+            content: '和';
+            position: absolute;
+            font-family: serif;
+            font-size: 20rem;
+            color: rgba(200,169,110,0.04);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            user-select: none;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
+        .final-cta .container { position: relative; z-index: 2; }
+        .final-cta h2 { color: var(--cream); margin-bottom: 1rem; font-size: clamp(2rem, 4vw, 3.5rem); }
+        .final-cta .sub { color: rgba(248,244,237,0.65); max-width: 520px; margin: 0 auto 3rem; font-size: 1.05rem; }
 
-            header p {
-                font-size: 1rem;
-            }
-
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-
-            .benefits-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
+        .final-cta-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
         }
 
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
+        .final-availability {
+            font-size: 0.78rem;
+            color: rgba(248,244,237,0.35);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
-        .fade-in {
+        .contact-alts {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(200,169,110,0.15);
+        }
+
+        .contact-alt-item { text-align: center; }
+
+        .contact-alt-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-alt-value {
+            display: block;
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .contact-alt-value:hover { color: var(--gold-light); }
+
+        /* ─── FOOTER ──────────────────────────────────── */
+        footer {
+            background: #111c13;
+            color: rgba(248,244,237,0.4);
+            text-align: center;
+            padding: 2.5rem 0;
+            font-size: 0.82rem;
+            letter-spacing: 0.03em;
+        }
+
+        footer a { color: rgba(200,169,110,0.6); text-decoration: none; }
+        footer a:hover { color: var(--gold); }
+
+        /* ─── ANIMATIONS ──────────────────────────────── */
+        .reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
         }
 
-        .fade-in.revealed {
+        .reveal.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ─── MOBILE ──────────────────────────────────── */
+        @media (max-width: 900px) {
+            .hero { grid-template-columns: 1fr; min-height: auto; }
+
+            .hero-content {
+                padding: 9rem 2rem 4rem;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .hero-image { height: 55vw; min-height: 280px; }
+            .hero-image-overlay { background: linear-gradient(to bottom, var(--green) 0%, transparent 30%); }
+
+            .steps-grid { grid-template-columns: 1fr; gap: 2px; }
+            .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .faq-grid { grid-template-columns: 1fr; }
+            .about-image-wrap { max-width: 360px; margin: 0 auto; }
+            .cred-badge { left: 0; top: 1rem; }
+
+            section { padding: 5rem 0; }
+        }
+
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--green);
+                padding: 1.5rem 2rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid rgba(200,169,110,0.15);
+            }
+            .hamburger { display: flex; }
+            .price-card.featured { transform: scale(1); }
+
+            .contact-alts { gap: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="fade-in">SILVIA SHIATSU</h1>
-            <p class="fade-in">Terapie Shiatsu Profesională</p>
-        </div>
-    </header>
 
-    <section class="hero">
-        <svg class="enso-overlay" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50,10 C25,10 10,30 10,50 C10,75 35,90 60,85 C80,80 90,60 88,40" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 4"/>
-        </svg>
-        <div class="container">
-            <h2 class="fade-in">Echilibru și Armonie Interioară</h2>
-            <p class="fade-in">Terapie manuală japoneză pentru regenerare completă</p>
-        </div>
-    </section>
+<!-- ─── NAV ──────────────────────────────────────── -->
+<nav id="nav">
+    <a href="#" class="nav-logo">Silvia <span>Shiatsu</span></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#cum-functioneaza">Cum funcționează</a></li>
+        <li><a href="#despre">Despre mine</a></li>
+        <li><a href="#preturi">Prețuri</a></li>
+        <li><a href="#contact" class="btn-nav">Programează-te</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Meniu">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
 
-    <section id="despre">
-        <div class="container">
-            <div class="kanji-deco" style="top: 10%; right: 5%;">和</div> <!-- Harmony -->
-            <h2>Ce este Shiatsu?</h2>
-            <div class="about-content">
+<!-- ─── HERO ──────────────────────────────────────── -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="hero-trust-bar">
+            <span class="trust-pill">Certificată internațional</span>
+            <span class="trust-pill">200+ sesiuni</span>
+            <span class="trust-pill">Chișinău</span>
+        </div>
+
+        <h1>Scapă de durere,<br>tensiune și stres -<br><em>fără medicamente.</em></h1>
+
+        <p class="hero-sub">
+            Shiatsu este o terapie japoneză prin presiune aplicată pe corp. Rămâi îmbrăcat(ă), fără uleiuri sau aparatură. Eficient pentru dureri de spate, stres cronic și somn prost.
+        </p>
+
+        <div class="hero-cta-group">
+            <a href="https://wa.me/37367234461" class="btn-primary" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Rezervă pe WhatsApp
+            </a>
+            <a href="#cum-functioneaza" class="btn-ghost">Cum funcționează →</a>
+        </div>
+        <p class="hero-response">Răspund în max. 2 ore · Disponibil și weekenduri</p>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1200&q=80"
+             alt="Terapie Shiatsu profesională - clientul rămâne îmbrăcat" loading="eager">
+        <div class="hero-image-overlay"></div>
+        <span class="kanji-float" style="bottom:15%; right:8%; font-size:8rem; opacity:0.1;">和</span>
+    </div>
+</section>
+
+<!-- ─── PROBLEM BAND ──────────────────────────────── -->
+<div class="problem-band">
+    <div class="container">
+        <span class="section-label" style="text-align:center; display:block;">Te regăsești?</span>
+        <h2>Corpul tău îți trimite semnale.</h2>
+        <p class="lead">Dacă trăiești cu oricare din situațiile de mai jos, Shiatsu poate ajuta.</p>
+
+        <div class="symptoms-grid">
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 8v4l3 3"/></svg>
+                Dureri cronice de spate sau gât
+            </div>
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                Stres și anxietate frecventă
+            </div>
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                Somn prost sau insomnie
+            </div>
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Oboseală cronică / burnout
+            </div>
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                Tensiune musculară și rigiditate
+            </div>
+            <div class="symptom-tag">
+                <svg class="symptom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>
+                Migrene sau dureri de cap
+            </div>
+        </div>
+
+        <div class="solution-bridge">
+            <h3>Shiatsu tratează sursa, nu simptomul.</h3>
+            <p>Prin presiune aplicată pe puncte specifice ale corpului, sesiunea deblocheaza tensiunea musculară, reglează sistemul nervos și restabilește echilibrul. Efect vizibil de la prima ședință.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ─── HOW IT WORKS ──────────────────────────────── -->
+<section class="how-section" id="cum-functioneaza">
+    <div class="container">
+        <span class="section-label" style="text-align:center; display:block;">Procesul</span>
+        <h2 style="text-align:center; color:var(--green); margin-bottom:0.5rem;">Ce se întâmplă la o sesiune</h2>
+        <p style="text-align:center; color:var(--text-mid); max-width:500px; margin:0 auto;">Simplu, fără surprize. Iată la ce te poți aștepta.</p>
+
+        <div class="steps-grid">
+            <div class="step reveal">
+                <div class="step-number">01</div>
+                <h3>Consultație</h3>
+                <p>Începem cu o discuție scurtă despre ce te deranjează - dureri, stres, somn prost. Fiecare sesiune se adaptează situației tale specifice.</p>
+                <div class="step-detail">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    ~10 minute
+                </div>
+            </div>
+            <div class="step reveal reveal-delay-1">
+                <div class="step-number">02</div>
+                <h3>Sesiunea propriu-zisă</h3>
+                <p>Lucrezi pe o saltea, rămâi îmbrăcat(ă), fără uleiuri sau aparatură. Aplic presiune cu palmele și degetele pe zone specifice. Nu doare - majoritatea clienților adorm.</p>
+                <div class="step-detail">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    50–80 minute
+                </div>
+            </div>
+            <div class="step reveal reveal-delay-2">
+                <div class="step-number">03</div>
+                <h3>Rezultat</h3>
+                <p>Majoritatea clienților descriu starea de după ca un somn de 8 ore - dar conștient. Durerea scade, mintea se limpezește, corpul se relaxează profund.</p>
+                <div class="step-detail">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    De la prima ședință
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── BENEFITS ──────────────────────────────────── -->
+<section class="benefits-section" id="beneficii">
+    <div class="container">
+        <div class="benefits-intro reveal">
+            <span class="section-label">De ce Shiatsu</span>
+            <h2 style="color:var(--green);">Ce se schimbă după o sesiune</h2>
+            <p style="color:var(--text-mid);">Efectele sunt fizice și mentale - și se acumulează în timp.</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card reveal">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 8v4l3 3"/></svg>
+                <h3>Stresul dispare vizibil</h3>
+                <p>Nu e o senzație temporară. Presiunea aplicată pe punctele cheie reglează sistemul nervos și reduce nivelul de cortizol - hormonul stresului.</p>
+            </div>
+            <div class="benefit-card reveal reveal-delay-1">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>
+                <h3>Durerea scade sau dispare</h3>
+                <p>Eficient în dureri cronice de spate, gât, umeri și articulații. Lucrăm direct pe zona tensionată, nu doar în jurul ei.</p>
+            </div>
+            <div class="benefit-card reveal reveal-delay-2">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <h3>Somnul se îmbunătățește</h3>
+                <p>Clienții care sufereau de insomnie raportează îmbunătățiri semnificative după 2–3 sesiuni. Corpul relaxat adoarme mai ușor și se odihnește mai bine.</p>
+            </div>
+            <div class="benefit-card reveal">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <h3>Energie și claritate mentală</h3>
+                <p>Când tensiunea musculară dispare, corpul consumă mai puțină energie pentru a funcționa. Rezultatul: te simți mai energic(ă) și mai concentrat(ă).</p>
+            </div>
+            <div class="benefit-card reveal reveal-delay-1">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <h3>Circulație îmbunătățită</h3>
+                <p>Presiunea ritmică activează circulația sanguină și limfatică, ajutând la eliminarea toxinelor și la regenerarea țesuturilor.</p>
+            </div>
+            <div class="benefit-card reveal reveal-delay-2">
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                <h3>Echilibru emoțional</h3>
+                <p>Emoțiile negative se acumulează în corp. Shiatsu ajută la eliberarea lor fizică - nu prin vorbă, ci prin atingere și prezență terapeutică.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:4rem;" class="reveal">
+            <a href="https://wa.me/37367234461" class="btn-primary" target="_blank" rel="noopener">
+                Vreau să încerc - rezervă acum
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─── TESTIMONIALS ──────────────────────────────── -->
+<section class="testimonials-section" id="testimoniale">
+    <div class="container">
+        <span class="section-label">Ce spun clienții</span>
+        <h2>Rezultate reale, oameni reali</h2>
+        <p class="testimonials-lead">Nu te convinge de cuvintele mele - citește experiențele lor.</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="testimonial-problem">Problema: dureri de spate cronice</div>
+                <p class="testimonial-text">„Aveam dureri de spate de 3 ani. Am fost la fizioterapie, am luat pastile - nimic nu ținea mai mult de câteva zile. După 4 sesiuni cu Silvia, durerea a dispărut aproape complet. Nu știam că e posibil."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div class="author-info">
+                        <span class="author-name">Ana M.</span>
+                        <span class="author-detail">Chișinău · 4 sesiuni</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal reveal-delay-1">
+                <div class="stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="testimonial-problem">Problema: insomnie și stres</div>
+                <p class="testimonial-text">„Lucrez în IT, dormit 5–6 ore pe noapte era normalul meu. Silvia mi-a explicat clar ce face și de ce. După primele 2 sesiuni dormeam 8 ore. Pur și simplu."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">V</div>
+                    <div class="author-info">
+                        <span class="author-name">Vlad C.</span>
+                        <span class="author-detail">Chișinău · client regulat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal reveal-delay-2">
+                <div class="stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                </div>
+                <div class="testimonial-problem">Problema: burnout</div>
+                <p class="testimonial-text">„Eram complet golită - fizic și emoțional. Prietena mea m-a convins să încerc. Prima sesiune a durat 75 de minute și am plâns la final - nu de durere, ci de ușurare. Recomand cu toată inima."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div class="author-info">
+                        <span class="author-name">Maria T.</span>
+                        <span class="author-detail">Chișinău · 6 sesiuni</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-cta reveal">
+            <a href="https://wa.me/37367234461" class="btn-primary" target="_blank" rel="noopener">
+                Scrie-mi pe WhatsApp →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─── ABOUT ──────────────────────────────────────── -->
+<section class="about-section" id="despre">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-wrap reveal">
+                <div class="about-image-frame">
+                    <img src="silvia.png" alt="Silvia, terapeut Shiatsu certificat">
+                </div>
+                <div class="about-deco"></div>
+                <div class="cred-badge">
+                    <div class="cred-num">8+</div>
+                    <div class="cred-label">ani de practică</div>
+                </div>
+            </div>
+
+            <div class="about-content reveal reveal-delay-1">
+                <span class="section-label">Terapeut</span>
+                <h2>Bună, sunt Silvia.</h2>
+                <p class="about-name-sub">Terapeut Shiatsu certificat · Chișinău</p>
+
                 <p>
-                    <strong>Shiatsu</strong> este o formă tradițională de terapie japoneză care combină presiunea digitală cu tehnici de masaj pentru a restabili echilibrul energetic al corpului. Prin stimularea punctelor specifice de-a lungul meridianelor energetice, Shiatsu ajută la deblocarea fluxului de energie vitală (Ki) și promovează vindecarea naturală.
+                    Am descoperit Shiatsu după o perioadă dificilă în care durerea de spate mă împiedica să dorm și să lucrez normal. Masajul clasic ajuta temporar. Shiatsu a rezolvat sursa problemei.
                 </p>
-                <div class="highlight">
-                    <p>
-                        Sant o practicantă certificată cu experiență vastă în arta Shiatsu, dedicată să ofere tratamente personalizate care să răspundă nevoilor unice ale fiecărui client. Cu o abordare holistică și atentă, fiecare sesiune este concepută pentru a aduce echilibru fizic, mental și emoțional.
-                    </p>
-                </div>
                 <p>
-                    Shiatsu nu este doar un masaj - este o călătorie spre autodezvoltare, relaxare profundă și regenerare completă. Fie că suferi de stress, dureri cronice, tensiune musculară sau pur și simplu dorești să îți îmbunătățești starea generală de sănătate, Shiatsu poate fi soluția ta.
+                    De atunci am studiat serios și am lucrat cu sute de clienți care sufereau de dureri cronice, stres, insomnie și burnout. Ceea ce m-a convins să rămân în această practică este simplitatea ei - și cât de des funcționează.
                 </p>
-            </div>
-        </div>
-    </section>
+                <p>
+                    Fiecare sesiune pe care o ofer este individuală, adaptată la ce ai tu nevoie în acea zi. Nu există un protocol fix. Ascult corpul fiecărui client și lucrez cu el, nu pe el.
+                </p>
 
-    <section id="beneficii">
-        <div class="container">
-            <div class="kanji-deco" style="bottom: 10%; left: 5%;">気</div> <!-- Energy -->
-            <h2>Beneficiile Terapiei Shiatsu</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 8v4l3 3"/></svg>
+                <div class="credentials">
+                    <div class="credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Certificare internațională Shiatsu
                     </div>
-                    <h3>Reducerea Stresului</h3>
-                    <p>Tehnicile Shiatsu ajută la eliberarea tensiunii acumulate și promovează o stare profundă de relaxare și calm interior.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>
+                    <div class="credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        200+ sesiuni realizate
                     </div>
-                    <h3>Ameliorarea Durerii</h3>
-                    <p>Eficient în tratarea durerii cronice, a tensiunii musculare și a problemelor articulare prin stimularea punctelor terapeutice.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <div class="credential">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Formare continuă anuală
                     </div>
-                    <h3>Creșterea Energiei</h3>
-                    <p>Reechilibrează fluxul energetic al corpului, oferindu-ți mai multă vitalitate și energie pentru viața de zi cu zi.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h3>Îmbunătățirea Circulației</h3>
-                    <p>Stimulează circulația sanguină și limfatică, contribuind la detoxifierea organismului și îmbunătățirea funcțiilor vitale.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-                    </div>
-                    <h3>Echilibru Emoțional</h3>
-                    <p>Ajută la gestionarea anxietății și a emoțiilor negative, promovând un sentiment de pace și echilibru interior.</p>
-                </div>
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                    </div>
-                    <h3>Îmbunătățirea Somnului</h3>
-                    <p>Sesiunile regulate de Shiatsu pot ameliora calitatea somnului și pot ajuta la combaterea insomniei.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Programează o Sesiune</h2>
-            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                Contactează-mă pentru o consultație sau pentru a programa o sesiune de terapie Shiatsu. Sunt aici să te ajut în călătoria ta spre bunăstare.
-            </p>
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    </div>
-                    <h3>Telefon</h3>
-                    <a href="tel:+37367234461">(+373) 67 234 461</a>
+<!-- ─── PRICING ────────────────────────────────────── -->
+<section class="pricing-section" id="preturi">
+    <div class="container">
+        <div class="pricing-header reveal">
+            <span class="section-label">Prețuri</span>
+            <h2 style="color:var(--green);">Transparent și simplu</h2>
+            <p>Fără costuri ascunse. Prima consultație este inclusă în preț.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card reveal">
+                <h3>Sesiune Scurtă</h3>
+                <div class="price-duration">50 MINUTE</div>
+                <div class="price-amount"><span class="price-currency">MDL</span> 450</div>
+                <div class="price-unit">per sesiune</div>
+                <ul class="price-features">
+                    <li>Consultație inițială inclusă</li>
+                    <li>Focalizat pe o zonă specifică</li>
+                    <li>Ideal pentru prima vizită</li>
+                </ul>
+                <a href="https://wa.me/37367234461" class="btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">Rezervă</a>
+            </div>
+
+            <div class="price-card featured reveal reveal-delay-1">
+                <div class="price-badge">Cel mai ales</div>
+                <h3>Sesiune Completă</h3>
+                <div class="price-duration">75 MINUTE</div>
+                <div class="price-amount"><span class="price-currency" style="color:var(--gold);">MDL</span> 600</div>
+                <div class="price-unit">per sesiune</div>
+                <ul class="price-features">
+                    <li>Consultație inițială inclusă</li>
+                    <li>Corp întreg sau zone multiple</li>
+                    <li>Recomandat pentru stres și burnout</li>
+                    <li>Sfaturi post-sesiune personalizate</li>
+                </ul>
+                <a href="https://wa.me/37367234461" class="btn-primary" style="width:100%; justify-content:center; background:var(--gold); color:var(--green);" target="_blank" rel="noopener">Rezervă</a>
+            </div>
+
+            <div class="price-card reveal reveal-delay-2">
+                <h3>Pachet 5 Sesiuni</h3>
+                <div class="price-duration">75 MIN / SESIUNE</div>
+                <div class="price-amount"><span class="price-currency">MDL</span> 2500</div>
+                <div class="price-unit">economisești 500 MDL</div>
+                <ul class="price-features">
+                    <li>5 sesiuni complete de 75 min</li>
+                    <li>Recomandat pentru dureri cronice</li>
+                    <li>Flexibil - folosești când vrei</li>
+                </ul>
+                <a href="https://wa.me/37367234461" class="btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">Rezervă</a>
+            </div>
+        </div>
+
+        <p class="price-note reveal">
+            Nu ești sigur(ă) ce sesiune ți se potrivește? Scrie-mi pe WhatsApp - te ajut să alegi fără niciun angajament.
+        </p>
+    </div>
+</section>
+
+<!-- ─── FAQ ────────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-header reveal">
+            <span class="section-label">Întrebări frecvente</span>
+            <h2 style="color:var(--green);">Răspunsuri clare, fără jargon</h2>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span class="faq-q-text">Trebuie să mă dezbrac?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                    </div>
-                    <h3>WhatsApp</h3>
-                    <a href="https://wa.me/393291427321" target="_blank" rel="noopener">Trimite mesaj</a>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Nu. Shiatsu se practică cu haine comode pe tine - pantaloni de trening și un tricou sunt perfecte. Nu există uleiuri, nu există dezbrăcare.</div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                    </div>
-                    <h3>Facebook</h3>
-                    <a href="https://facebook.com/studiostarmeglio" target="_blank" rel="noopener">Vizitează pagina</a>
+            </div>
+
+            <div class="faq-item reveal reveal-delay-1">
+                <div class="faq-question">
+                    <span class="faq-q-text">Este dureros?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
-                    <h3>Email</h3>
-                    <a href="mailto:studio@silvia-shiatsu.com">studio@silvia-shiatsu.com</a>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">De obicei nu. Presiunea poate fi uneori intensă în zonele foarte tensionate, dar nu doare în sensul neplăcut. Cei mai mulți clienți adorm în timpul sesiunii.</div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span class="faq-q-text">Câte sesiuni îmi trebuie?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Depinde de situație. Mulți clienți simt o diferență semnificativă după prima sesiune. Pentru probleme cronice (dureri de luni/ani), recomand minim 4–6 sesiuni pentru un efect de durată.</div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal reveal-delay-1">
+                <div class="faq-question">
+                    <span class="faq-q-text">Shiatsu e același lucru cu masajul clasic?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Nu. Masajul clasic relaxează musculatura prin fricțiune și alunecare. Shiatsu lucrează prin presiune susținută pe puncte specifice, pe saltea, cu hainele pe tine. Efectul este mai profund și mai de durată pentru probleme cronice.</div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-question">
+                    <span class="faq-q-text">Există contraindicații?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Da. Shiatsu nu este recomandat în caz de febră acută, infecții active, fracturi sau tromboflebită. Dacă ești gravidă sau ai o afecțiune medicală, consultă medicul înainte și anunță-mă la programare.</div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal reveal-delay-1">
+                <div class="faq-question">
+                    <span class="faq-q-text">Unde au loc sesiunile?</span>
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">Sesiunile au loc în Chișinău, într-un spațiu liniștit și privat. Adresa exactă o primești după confirmare. Scrie-mi pe WhatsApp pentru detalii.</div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Silvia Shiatsu. Toate drepturile rezervate.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Terapie Shiatsu Profesională | Chișinău, Republica Moldova</p>
+<!-- ─── FINAL CTA ──────────────────────────────────── -->
+<section class="final-cta" id="contact">
+    <div class="container">
+        <span class="section-label" style="text-align:center; display:block;">Hai să începem</span>
+        <h2>Corpul tău merită<br><em style="font-style:italic; color:var(--gold);">mai mult decât să reziste.</em></h2>
+        <p class="sub">Scrie-mi pe WhatsApp - stabilim o oră care ți se potrivește, fără angajamente.</p>
+
+        <div class="final-cta-buttons">
+            <a href="https://wa.me/37367234461" class="btn-primary" target="_blank" rel="noopener" style="font-size:1rem; padding:1.1rem 2.5rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Rezervă pe WhatsApp
+            </a>
         </div>
-    </footer>
+        <p class="final-availability">Accept un număr limitat de clienți noi pe lună</p>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+        <div class="contact-alts">
+            <div class="contact-alt-item">
+                <div class="contact-alt-label">Telefon</div>
+                <a href="tel:+37367234461" class="contact-alt-value">(+373) 67 234 461</a>
+            </div>
+            <div class="contact-alt-item">
+                <div class="contact-alt-label">Facebook</div>
+                <a href="https://facebook.com/studiostarmeglio" class="contact-alt-value" target="_blank" rel="noopener">Vizitează pagina</a>
+            </div>
+            <div class="contact-alt-item">
+                <div class="contact-alt-label">Email</div>
+                <a href="mailto:studio@silvia-shiatsu.com" class="contact-alt-value">studio@silvia-shiatsu.com</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('revealed');
-                    }
-                });
-            }, observerOptions);
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Silvia Shiatsu · Terapie Shiatsu Profesională · Chișinău, Republica Moldova</p>
+        <p style="margin-top:0.5rem;">
+            <a href="tel:+37367234461">(+373) 67 234 461</a>
+            &nbsp;·&nbsp;
+            <a href="mailto:studio@silvia-shiatsu.com">studio@silvia-shiatsu.com</a>
+        </p>
+    </div>
+</footer>
 
-            document.querySelectorAll('.fade-in, .benefit-card').forEach(el => {
-                observer.observe(el);
-            });
+<script>
+    // ─── Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
         });
-    </script>
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ─── Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ─── Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // ─── FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-question').addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            // Toggle clicked
+            if (!isOpen) item.classList.add('open');
+        });
+    });
+
+    // ─── Hero images stagger
+    document.addEventListener('DOMContentLoaded', () => {
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 100);
+        }
+    });
+</script>
 </body>
 </html>
